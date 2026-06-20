@@ -14,13 +14,6 @@ $(call inherit-product, device/realme/ferrari/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Rising
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    RisingChipset="Snapdragon 8 Gen 1" \
-    RisingMaintainer="Arman ATI"
-
-RISING_MAINTAINER := Arman ATI
-
 # Blur
 TARGET_ENABLE_BLUR := true
 
