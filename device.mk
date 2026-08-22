@@ -23,15 +23,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 3216
-TARGET_SCREEN_WIDTH := 1440
+TARGET_SCREEN_HEIGHT := 2412
+TARGET_SCREEN_WIDTH := 1080
 
 # Display
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display_id_4630946358012694402.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946358012694402.xml
 
-# Lineage Health
-$(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/oplus_chg/battery/mmi_charging_enable)
+$(call soong_config_set_bool,qtidisplay,oplus_udfps,true)
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -60,6 +59,10 @@ PRODUCT_PACKAGES += \
     OPlusSettingsResTarget \
     OPlusSystemUIResTarget \
     PixelSetupWizardStringsOverlay
+
+# PowerShare
+PRODUCT_PACKAGES += \
+    vendor.lineage.powershare-service.oplus
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

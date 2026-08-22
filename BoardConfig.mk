@@ -13,7 +13,6 @@ DEVICE_PATH := device/realme/ferrari
 
 # Display
 TARGET_SCREEN_DENSITY := 420
-$(call soong_config_set,qtidisplay,oplus_udfps,true)
 
 # DTB/O
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
@@ -29,7 +28,7 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Recovery
 TARGET_RECOVERY_DENSITY := xxhdpi
-TARGET_RECOVERY_UI_MARGIN_HEIGHT := 126
+TARGET_RECOVERY_UI_MARGIN_HEIGHT := 103
 
 # Include the proprietary files BoardConfig.
 include vendor/realme/ferrari/BoardConfigVendor.mk

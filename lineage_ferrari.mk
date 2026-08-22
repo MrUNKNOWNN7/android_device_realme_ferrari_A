@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/realme/ferrari/device.mk)
 
 # Inherit some common InfinityX stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Blur
 TARGET_ENABLE_BLUR := true
@@ -30,7 +30,7 @@ WITH_GMS := true
 ALLOW_ADBD_ROOT := true
 ALLOW_LOCAL_PROP_OVERRIDE := true
 
-PRODUCT_NAME := infinity_ferrari
+PRODUCT_NAME := lineage_ferrari
 PRODUCT_DEVICE := ferrari
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme

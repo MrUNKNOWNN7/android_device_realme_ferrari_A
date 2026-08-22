@@ -1,5 +1,5 @@
 # Bluetooth
-bluetooth.device.default_name=realme GT 2 Pro
+bluetooth.device.default_name=Realme GT 2 Pro
 
 # Graphics
 debug.sf.frame_rate_multiple_threshold=60
@@ -11,4 +11,4 @@ ro.surface_flinger.set_display_power_timer_ms=1000
 persist.radio.multisim.config=dsds
 
 # USB
-vendor.usb.product_string=realme GT 2 Pro
+vendor.usb.product_string=Realme GT 2 Pro
